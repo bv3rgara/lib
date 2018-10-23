@@ -15,11 +15,11 @@ include("conexion.php");
 							data:
 						 		[
 						 		<?php 
-						 			$sql = "SELECT * FROM empleado";
-						 			$res = mysql_query($sql,$conexion);
-						 			while ($array = mysql_fetch_array($res)){
-							 			echo $array["cantidad"] ?>,<?php
-									}
+					 			$sql = "SELECT * FROM empleado";
+					 			$res = mysql_query($sql,$conexion);
+					 			while ($array = mysql_fetch_array($res)){
+						 			echo $array["cantidad"] ?>,<?php
+								}
 								?>
 								],
 							backgroundColor: [
@@ -33,11 +33,11 @@ include("conexion.php");
 						}],
 						labels: [
 					 		<?php
-					 			$sql = "SELECT * FROM empleado";
-					 			$res = mysql_query($sql,$conexion);
-					 			while ($array = mysql_fetch_array($res)){
-					 				?>'<?php echo $array["nombre"]." ".$array["apellido"] ?>',<?php
-					 			}
+				 			$sql = "SELECT * FROM empleado";
+				 			$res = mysql_query($sql,$conexion);
+				 			while ($array = mysql_fetch_array($res)){
+				 				?>'<?php echo $array["nombre"]." ".$array["apellido"] ?>',<?php
+				 			}
 					 		?>
 						]
 					},

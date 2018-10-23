@@ -11,11 +11,11 @@ include("conexion.php");
 				 var datos = {
 				 	labels: [
 				 		<?php
-				 			$sql = "SELECT * FROM empleado";
-				 			$res = mysql_query($sql,$conexion);
-				 			while ($array = mysql_fetch_array($res)){
-				 				?>'<?php echo $array["nombre"]." ".$array["apellido"] ?>',<?php
-				 			}
+			 			$sql = "SELECT * FROM empleado";
+			 			$res = mysql_query($sql,$conexion);
+			 			while ($array = mysql_fetch_array($res)){
+			 				?>'<?php echo $array["nombre"]." ".$array["apellido"] ?>',<?php
+			 			}
 				 		?>
 				 	],
 				 	datasets: [
@@ -24,11 +24,11 @@ include("conexion.php");
 					 		backgroundColor: "rgba(49,164,101, 0.5)",
 					 		data: [
 						 		<?php 
-						 			$sql = "SELECT * FROM empleado";
-						 			$res = mysql_query($sql,$conexion);
-						 			while ($array = mysql_fetch_array($res)){
-							 			echo $array["cantidad"] ?>,<?php
-									}
+					 			$sql = "SELECT * FROM empleado";
+					 			$res = mysql_query($sql,$conexion);
+					 			while ($array = mysql_fetch_array($res)){
+						 			echo $array["cantidad"] ?>,<?php
+								}
 								?>
 						 	]
 						},{
@@ -36,11 +36,11 @@ include("conexion.php");
 					 		backgroundColor: "rgba(151, 187, 205, 0.5)",
 					 		data:[
 						 		<?php 
-						 			$sql = "SELECT * FROM empleado";
-						 			$res = mysql_query($sql,$conexion);
-						 			while ($array = mysql_fetch_array($res)){
-							 			echo $array["sueldo"] ?>,<?php
-									}
+					 			$sql = "SELECT * FROM empleado";
+					 			$res = mysql_query($sql,$conexion);
+					 			while ($array = mysql_fetch_array($res)){
+						 			echo $array["sueldo"] ?>,<?php
+								}
 								?>
 					 		]
 					 	},
@@ -67,7 +67,16 @@ include("conexion.php");
 						title:{
 							display: true,
 							text: "Grafico Barra",
-						}
+						},
+						scales: {
+	                        yAxes: [{
+	                            ticks: {
+	                                beginAtZero:true,
+	                                min: 5,
+	                                max: 55,
+	                            }
+	                        }]
+	                    }
 					}
 				});
 				/*setInterval(function(){

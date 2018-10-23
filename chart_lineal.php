@@ -34,11 +34,11 @@ include("conexion.php");
 			var lineChartData = {
 				labels: [
 			 		<?php
-			 			$sql = "SELECT * FROM empleado";
-			 			$res = mysql_query($sql,$conexion);
-			 			while ($array = mysql_fetch_array($res)){
-			 				?>'<?php echo $array["nombre"]." ".$array["apellido"] ?>',<?php
-			 			}
+		 			$sql = "SELECT * FROM empleado";
+		 			$res = mysql_query($sql,$conexion);
+		 			while ($array = mysql_fetch_array($res)){
+		 				?>'<?php echo $array["nombre"]." ".$array["apellido"] ?>',<?php
+		 			}
 			 		?>				
 				],
 				datasets: [
@@ -49,11 +49,11 @@ include("conexion.php");
 						pointBackgroundColor: window.chartColors.red,
 						data: [
 					 		<?php 
-					 			$sql = "SELECT * FROM empleado";
-					 			$res = mysql_query($sql,$conexion);
-					 			while ($array = mysql_fetch_array($res)){
-						 			echo $array["cantidad"] ?>,<?php
-								}
+				 			$sql = "SELECT * FROM empleado";
+				 			$res = mysql_query($sql,$conexion);
+				 			while ($array = mysql_fetch_array($res)){
+					 			echo $array["cantidad"] ?>,<?php
+							}
 							?>
 						]
 					},{
@@ -63,11 +63,11 @@ include("conexion.php");
 						pointBackgroundColor: window.chartColors.blue,
 						data: [
 					 		<?php 
-					 			$sql = "SELECT * FROM empleado";
-					 			$res = mysql_query($sql,$conexion);
-					 			while ($array = mysql_fetch_array($res)){
-						 			echo $array["sueldo"] ?>,<?php
-								}
+				 			$sql = "SELECT * FROM empleado";
+				 			$res = mysql_query($sql,$conexion);
+				 			while ($array = mysql_fetch_array($res)){
+					 			echo $array["sueldo"] ?>,<?php
+							}
 							?>
 						]
 					}
