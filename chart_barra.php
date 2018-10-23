@@ -6,6 +6,7 @@ include("conexion.php");
 	<head>
 		<script type="text/javascript" src="js/jquery/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript" src="js/chart/Chart.bundle.min.js"></script>
+		<link href="css/bootstrap/bootstrap.bootstrap.min.css" rel="stylesheet">
 		<script type="text/javascript">
 			$(document).ready(function() {
 				 var datos = {
@@ -89,11 +90,8 @@ include("conexion.php");
 		</script>
 	</head>
 	<body>
-	 	<div class="container">
-		   	<h1>Chart Barra</h1>
-			<div id="canvas-container" style="width: 100%;">
-				<canvas id="area-canvas"></canvas>
-			</div>
+		<div id="canvas-container" style="width: 50%;">
+			<canvas id="area-canvas" width="500" height="350"></canvas>
 		</div>
 	</body>
 </html>

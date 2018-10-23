@@ -80,11 +80,8 @@ include("conexion.php");
         </script>    
     </head>
     <body>
-        <div class="container">
-            <h1>Chart Polar</h1>
-            <div id="canvas-container" class="center-block" style="width: 55%;">
-                <canvas id="area-canvas"></canvas>
-            </div>
+        <div id="canvas-holder" style="width:35%">
+            <canvas id="area-canvas"></canvas>
         </div>
     </body>
 </html>

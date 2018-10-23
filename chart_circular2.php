@@ -55,11 +55,8 @@ include("conexion.php");
 		</script>
 	</head>
 	<body>
-	 	<div class="container">
-		   	<h1>Chart Circular Doughnut</h1>
-            <div id="canvas-container" class="center-block" style="width: 55%;">
-				<canvas id="area-canvas"></canvas>
-			</div>
+		<div id="canvas-container" style="width: 50%;">
+			<canvas id="area-canvas" width="500" height="350"></canvas>
 		</div>
 	</body>
 </html>

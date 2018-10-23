@@ -113,11 +113,8 @@ include("conexion.php");
         </style>
     </head>
     <body>
-        <div class="container">
-            <h1>Chart Burbuja</h1>
-            <div id="canvas-container" style="width: 100%;">
-                <canvas id="area-canvas"></canvas>
-            </div>
+        <div id="container" style="width: 50%;">
+            <canvas id="area-canvas"></canvas>
         </div>
     </body>
 </html>

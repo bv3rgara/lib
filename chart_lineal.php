@@ -121,10 +121,8 @@ include("conexion.php");
 		</style>
 	</head>
 	<body>
-	 	<div class="container">
-		   	<h1>Chart Lineal</h1>
-			<div id="canvas-container" style="width: 100%;">
-				<canvas id="area-canvas"></canvas>
+		<div id="canvas-holder1" style="width:50%;">
+			<canvas id="area-canvas"></canvas>
 		</div>
 		<div class="chartjs-tooltip" id="tooltip-0"></div>
 		<div class="chartjs-tooltip" id="tooltip-1"></div>
