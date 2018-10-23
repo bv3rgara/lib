@@ -22,30 +22,34 @@ include("conexion.php");
 	    	<h1>Chosen</h1>
 		    <table class="table table-hover">       
 		       	<form class="form-horizontal" role="form">
-		            <div class="form-group">
-		           		<select name="miselect" class="chosen form-control" data-placeholder="Seleccione un empleado">
-					        <option value="Seleccione empleados">
-					        <?php
-					        $sql="SELECT * FROM ejemplo";
-					        $consulta = mysql_query($sql, $conexion) ;
-					        while ($array = mysql_fetch_array($consulta)) {
-					        	?>
-								<option value="<?php echo $array['id']?>"><?php echo $array['apellido']?>, <?php echo $array['nombre']?> - <?php echo $array['sueldo']?></option>
-								<?php
-							}
-							?>
-						</select>
+		            <div class="row">
+			            <div class="form-group col-lg-6">
+			           		<select name="miselect" class="chosen form-control" data-placeholder="Seleccione un empleado">
+						        <option value="Seleccione empleados">
+						        <?php
+						        $sql="SELECT * FROM ejemplo";
+						        $consulta = mysql_query($sql, $conexion) ;
+						        while ($array = mysql_fetch_array($consulta)) {
+						        	?>
+									<option value="<?php echo $array['id']?>"><?php echo $array['apellido']?>, <?php echo $array['nombre']?> - <?php echo $array['sueldo']?></option>
+									<?php
+								}
+								?>
+							</select>
+			            </div>
 		            </div>
-		            <div class="form-group">
-		                <select name="miselect[]" class="chosen form-control" data-placeholder="Seleccione muchos empleados" multiple>
-					        <?php
-					        $sql="SELECT * FROM ejemplo";
-					        $consulta = mysql_query($sql, $conexion) ;
-					        while ($array = mysql_fetch_array($consulta)) {?>
-								<option value="<?php echo $array['id']?>"><?php echo $array['apellido']?>, <?php echo $array['nombre']?> - <?php echo $array['sueldo']?></option>
-								<?php
-							} ?>
-						</select>
+		            <div class="row">
+			            <div class="form-group col-lg-6">
+			                <select name="miselect[]" class="chosen form-control" data-placeholder="Seleccione muchos empleados" multiple>
+						        <?php
+						        $sql="SELECT * FROM ejemplo";
+						        $consulta = mysql_query($sql, $conexion) ;
+						        while ($array = mysql_fetch_array($consulta)) {?>
+									<option value="<?php echo $array['id']?>"><?php echo $array['apellido']?>, <?php echo $array['nombre']?> - <?php echo $array['sueldo']?></option>
+									<?php
+								} ?>
+							</select>
+			            </div>
 		            </div>
 				</form>
 		    </table>
