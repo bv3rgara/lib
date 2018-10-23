@@ -2,7 +2,7 @@
 $servidor = "localhost"; 
 $usuario  = "admin";
 $password = "admin123";
-$base_de_datos = "bruno";
+$base_de_datos = "lib";
 
 $conexion = mysql_connect ($servidor,$usuario,$password) or die ('Imposible conectarse con la BD.');
 if (! $conexion){

@@ -25,7 +25,7 @@ include("conexion.php");
                     datasets: [{
                         data: [
                             <?php 
-                                $sql = "SELECT * FROM ejemplo";
+                                $sql = "SELECT * FROM empleado";
                                 $res = mysql_query($sql,$conexion);
                                 while ($array = mysql_fetch_array($res)){
                                     echo $array["cantidad"] ?>,<?php
@@ -43,7 +43,7 @@ include("conexion.php");
                     }],
                     labels: [
                         <?php
-                            $sql = "SELECT * FROM ejemplo";
+                            $sql = "SELECT * FROM empleado";
                             $res = mysql_query($sql,$conexion);
                             while ($array = mysql_fetch_array($res)){
                                 ?>'<?php echo $array["nombre"]." ".$array["apellido"] ?>',<?php

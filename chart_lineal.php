@@ -34,7 +34,7 @@ include("conexion.php");
 			var lineChartData = {
 				labels: [
 			 		<?php
-			 			$sql = "SELECT * FROM ejemplo";
+			 			$sql = "SELECT * FROM empleado";
 			 			$res = mysql_query($sql,$conexion);
 			 			while ($array = mysql_fetch_array($res)){
 			 				?>'<?php echo $array["nombre"]." ".$array["apellido"] ?>',<?php
@@ -49,7 +49,7 @@ include("conexion.php");
 						pointBackgroundColor: window.chartColors.red,
 						data: [
 					 		<?php 
-					 			$sql = "SELECT * FROM ejemplo";
+					 			$sql = "SELECT * FROM empleado";
 					 			$res = mysql_query($sql,$conexion);
 					 			while ($array = mysql_fetch_array($res)){
 						 			echo $array["cantidad"] ?>,<?php
@@ -63,7 +63,7 @@ include("conexion.php");
 						pointBackgroundColor: window.chartColors.blue,
 						data: [
 					 		<?php 
-					 			$sql = "SELECT * FROM ejemplo";
+					 			$sql = "SELECT * FROM empleado";
 					 			$res = mysql_query($sql,$conexion);
 					 			while ($array = mysql_fetch_array($res)){
 						 			echo $array["sueldo"] ?>,<?php

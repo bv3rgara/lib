@@ -4,7 +4,7 @@ include("conexion.php");
 //$id = 2;
 $entrada = 1;
 $id = $_POST['id'];
-$consulta = "SELECT * FROM ejemplo WHERE id = '$id'";
+$consulta = "SELECT * FROM empleado WHERE id = '$id'";
 $registros = mysql_query ($consulta,$conexion);
 if ($entrada == 1) {
 	$vec = new stdClass();

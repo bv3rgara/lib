@@ -30,7 +30,7 @@ include("conexion.php");
 			    </thead>
 			    <tbody>		
 					<?php 
-					$sql="SELECT * FROM ejemplo";
+					$sql="SELECT * FROM empleado";
 					$consulta = mysql_query($sql, $conexion) ;
 					while ($fila = mysql_fetch_array($consulta)) {
 						?>

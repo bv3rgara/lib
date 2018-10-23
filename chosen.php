@@ -27,7 +27,7 @@ include("conexion.php");
 			           		<select name="miselect" class="chosen form-control" data-placeholder="Seleccione un empleado">
 						        <option value="Seleccione empleados">
 						        <?php
-						        $sql="SELECT * FROM ejemplo";
+						        $sql="SELECT * FROM empleado";
 						        $consulta = mysql_query($sql, $conexion) ;
 						        while ($array = mysql_fetch_array($consulta)) {
 						        	?>
@@ -42,7 +42,7 @@ include("conexion.php");
 			            <div class="form-group col-lg-6">
 			                <select name="miselect[]" class="chosen form-control" data-placeholder="Seleccione muchos empleados" multiple>
 						        <?php
-						        $sql="SELECT * FROM ejemplo";
+						        $sql="SELECT * FROM empleado";
 						        $consulta = mysql_query($sql, $conexion) ;
 						        while ($array = mysql_fetch_array($consulta)) {?>
 									<option value="<?php echo $array['id']?>"><?php echo $array['apellido']?>, <?php echo $array['nombre']?> - <?php echo $array['sueldo']?></option>
