@@ -1,6 +1,6 @@
 <?php
-include ("index.php");
-include ("conexion.php");
+include("index.php");
+include("conexion.php");
 ?>
 <html>
 	<head>

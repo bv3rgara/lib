@@ -1,5 +1,5 @@
 <?php
-include ("index.php");
+include("index.php");
 include("conexion.php"); 
 ?>
 <html>
@@ -112,6 +112,7 @@ include("conexion.php");
 				-webkit-transform: translate(-50%, 0);
 				transform: translate(-50%, 0);
 				padding: 4px;
+				margin: 230px 0px 0px 400px;
 			}
 			.chartjs-tooltip-key {
 				display: inline-block;
