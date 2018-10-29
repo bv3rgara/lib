@@ -116,7 +116,7 @@ session_start();
 				background: #31a465;
 				color: #fff;
 				text-decoration: none;
-				padding: 5px 15px;
+				padding: 5px 2px;
 				display: block;
 				width: 132px;
 				text-align: center;
@@ -162,14 +162,14 @@ session_start();
 								<li><a href="/lib/tablesorter.php">TableSorter</a></li>
 								<li><a href="/lib/pace.php">Pace</a></li>
 								<li><a href="/lib/alertify.php">Alertify</a></li>
-								<li><a href="#">Chart</a>
+								<li><a href="#">Chart<img src="images/flecha.png" style="margin-left: -9px" width="10px" height="10px" align="right"></a>
 									<ul>
 										<li><a href="/lib/chart_barra.php">Barra</a></li>
 										<li><a href="/lib/chart_lineal.php">Lineal</a></li>
 										<li><a href="/lib/chart_radar.php">Radar</a></li>									
 										<li><a href="/lib/chart_polar.php">Polar</a></li>
 										<li><a href="/lib/chart_burbuja.php">Burbuja</a></li>
-										<li><a href="#">Circular</a>
+										<li><a href="#">Circular<img src="images/flecha.png" style="margin-left: -9px" width="10px" height="10px" align="right"></a>
 											<ul>
 												<li><a href="/lib/chart_circular1.php">Circular Pie</a></li>
 												<li><a href="/lib/chart_circular2.php">Circular Doughnut</a></li>
@@ -184,11 +184,11 @@ session_start();
 								<li><a href="/lib/modal.php">Modal</a></li>
 								<li><a href="/lib/completar_form.php">Autocompletar</a></li>
 								<li><a href="/lib/botones.php">Botones</a></li>
-								<li><a href="#">Fondos</a>
+								<li><a href="#">Fondos<img src="images/flecha.png" style="margin-left: -9px" width="10px" height="10px" align="right"></a>
 									<ul>
 										<li><a href="/lib/fondo1.php">Fondo 1</a></li>
 										<li><a href="/lib/fondo2.php">Fondo 2</a></li>
-										<li><a href="/lib/fondo3.php">Fondo 3</a>
+										<li><a href="/lib/fondo3.php">Fondo 3<img src="images/flecha.png" style="margin-left: -9px" width="10px" height="10px" align="right"></a>
 											<ul>
 												<li><a href="">Sub-Submenu 1</a></li>
 												<li><a href="">Sub-Submenu 2</a></li>
