@@ -110,10 +110,10 @@ include("index.php");
             height: 100%;
         }
     </style>
-    <body> 
+    <body>
         <div class="container">
-            <table id="myTable" class="table table-hover">    
-                <h1>Efectos en Botones</h1>   
+            <table id="myTable" class="table table-hover">
+                <h1>Efectos en Botones</h1>
                 <form class="form-horizontal" role="form">
                     <div class="form-group">
                         <button class="button type1">

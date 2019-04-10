@@ -1,10 +1,25 @@
 <?php
 include("index.php");
-include("conexion.php"); 
+include("conexion.php");
 ?>
 <html>
     <head>
-        <script src="js/chart/Chart.bundle.js"></script>
+        <style type="text/css">
+            canvas{
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Chart Burbuja</h1>
+            <div id="canvas-container" style="width: 100%;">
+                <canvas id="area-canvas"></canvas>
+            </div>
+        </div>
+        <script src="js/chart/chart.bundle.js"></script>
         <script src="js/chart/utils.js"></script>
         <script type="text/javascript" src="js/jquery/jquery-3.1.1.min.js"></script>
         <script>
@@ -103,21 +118,6 @@ include("conexion.php");
                 });
             };
             var colorNames = Object.keys(window.chartColors);
-        </script>    
-        <style type="text/css">
-            canvas{
-                -moz-user-select: none;
-                -webkit-user-select: none;
-                -ms-user-select: none;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Chart Burbuja</h1>
-            <div id="canvas-container" style="width: 100%;">
-                <canvas id="area-canvas"></canvas>
-            </div>
-        </div>
+        </script>
     </body>
 </html>

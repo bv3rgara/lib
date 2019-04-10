@@ -1,12 +1,9 @@
 <?php
 include("index.php");
-include("conexion.php"); 
+include("conexion.php");
 ?>
 <html>
     <head>
-        <script src="js/chart/Chart.bundle.js"></script>
-        <script src="js/chart/utils.js"></script>
-        <script type="text/javascript" src="js/jquery/jquery-3.1.1.min.js"></script>
         <style>
             canvas {
                 -moz-user-select: none;
@@ -14,8 +11,19 @@ include("conexion.php");
                 -ms-user-select: none;
             }
         </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Chart Polar</h1>
+            <div id="canvas-container" class="center-block" style="width: 55%;">
+                <canvas id="area-canvas"></canvas>
+            </div>
+        </div>
+        <script src="js/chart/chart.bundle.js"></script>
+        <script src="js/chart/utils.js"></script>
+        <script src="js/jquery/jquery-3.1.1.min.js" type="text/javascript"></script>
         <script>
-            var randomScalingFactor = function() {
+            var randomScalingFactor = function(){
                 return Math.round(Math.random() * 100);
             };
             var chartColors = window.chartColors;
@@ -29,8 +37,7 @@ include("conexion.php");
                             $res = mysql_query($sql,$conexion);
                             while ($array = mysql_fetch_array($res)){
                                 echo $array["cantidad"] ?>,<?php
-                            }
-                            ?>
+                            }?>
                         ],
                         backgroundColor: [
                             color(chartColors.red).alpha(0.5).rgbString(),
@@ -47,8 +54,7 @@ include("conexion.php");
                         $res = mysql_query($sql,$conexion);
                         while ($array = mysql_fetch_array($res)){
                             ?>'<?php echo $array["nombre"]." ".$array["apellido"] ?>',<?php
-                        }
-                        ?>
+                        }?>
                     ]
                 },
                 options: {
@@ -77,14 +83,6 @@ include("conexion.php");
                 window.myPolarArea = Chart.PolarArea(ctx, config);
             };
             var colorNames = Object.keys(window.chartColors);
-        </script>    
-    </head>
-    <body>
-        <div class="container">
-            <h1>Chart Polar</h1>
-            <div id="canvas-container" class="center-block" style="width: 55%;">
-                <canvas id="area-canvas"></canvas>
-            </div>
-        </div>
+        </script>
     </body>
 </html>
