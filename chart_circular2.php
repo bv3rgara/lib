@@ -31,7 +31,7 @@ include("conexion.php");
                                 "#31a465",
                                 "#fdb45c",
                                 "#949fb1",
-                                "#200fb1",
+                                "#87CEEB",
                                 "#fd9fb1",
                             ],
                         }],
